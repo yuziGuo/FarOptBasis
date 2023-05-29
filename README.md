@@ -6,7 +6,7 @@
 This repository includes the implementation for **FavardGNN** and **OptBasisGNN**, 
 two spectral graph neural networks which adapts the polynomial bases for filtering. 
 
-## Reproducing Results.
+## Reproducing Classification Results.
 <!-- Scripts for reproducing results of our models in Table 1.  -->
 
 ### Folder structure.
@@ -36,15 +36,16 @@ sh scripts/reproduce_favardgnn.sh
 sh scripts/reproduce_optbasis.sh
 ```
 
-![Image](https://pic4.zhimg.com/80/v2-0d26a237dc57435236f1ec6e7d19a9be.png)
+![Table 1](./scripts/reported/tbl1.png)
 
 ### Reproducing Results on LINKX Datasets (Tbl.2).
 Run scripts in the following files under `./` path.
 ```bash
 sh scripts/reproduce_linkx.sh
 ```
+![Table 2](./scripts/reported/tbl2.png)
 
-### Reproducing Table 2.
+## Reproducing Regression Task.
 Shift working path to `Regression/`. 
 ```bash
 sh> cd Regression
@@ -56,7 +57,6 @@ sh> unzip -d BernNetImages  BernNet-LearningFilters-image.zip
 ```
 
 **Step 2: Pre-compute $ U h(\Lambda) U^T $**
-
 Pre-compute the matrix polynomials $M = U h(\Lambda) U^T = h(L)$
 where $h$ corresponds to 
 $L$ is the Laplacian matrix for `100x100` grid graph, and 
@@ -98,8 +98,13 @@ you can use the bash script below to run over all the samples.
 ```bash
 sh> python main_all.py
 ```
+![Table 5](./scripts/reported/tbl5.png)
 
 To reproduce converging curves as in *Figure 2*, 
+
+<!-- ![sample](./scripts/reported/icml-6.pdf) -->
+![Figure 2](./scripts/reported/fig2.png)
+
 you can use the following script to run one or several samples and record the losses.
 ```bash
 sh> python main_sample.py
