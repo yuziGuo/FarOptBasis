@@ -69,9 +69,15 @@ and $h$ corresponds to
 ```bash
 sh> python preprocess_matrix_polynomials.py
 ```
-
 The result of this step is saved in the `save/` folder.
+This step would take several hours, 
+you can also unzip our pre-computed matrices directly.
+```bash
+sh> unzip ./save/cachedMatrices.zip
 ```
+
+The resulted files are:
+```bash
 .save/
 ├── bandpass_Np=100.pkl
 ├── bandreject_Np=100.pkl
