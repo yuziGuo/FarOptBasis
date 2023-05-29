@@ -33,7 +33,7 @@ class citation_full_supervised_loader(loader):
     
     def load_a_mask(self, p=None):
         if p == None:
-            splits_file_path = os.path.join("dataset/splits", "{}_split_0.6_0.2_{}.npz".format(self.ds_name.split('full')[0], self.cv_id))
+            splits_file_path = os.path.join("datasets/splits", "{}_split_0.6_0.2_{}.npz".format(self.ds_name.split('full')[0], self.cv_id))
             with np.load(splits_file_path) as splits_file:
                 train_mask = splits_file['train_mask']
                 val_mask = splits_file['val_mask']

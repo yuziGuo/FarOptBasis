@@ -1,5 +1,7 @@
 #
 *.pyc
+*.err
+./*.log 
 
 #
 run.sh

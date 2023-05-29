@@ -63,58 +63,6 @@ def build_model(args, edge_index, norm_A, in_feats, n_classes):
                     args.dropout,
                     args.dropout2,
                     )
-    if args.model == 'ARMA':
-        model = ARMANN(
-                    edge_index,
-                    norm_A,
-                    in_feats,
-                    args.n_hidden,
-                    n_classes,
-                    args.n_stacks,
-                    args.n_layers,
-                    F.relu, 
-                    args.dropout,
-                    args.dropout2
-                    )
-    if args.model == 'GPRGNN':
-        model = GPRGNN(
-                    edge_index,
-                    norm_A,
-                    in_feats,
-                    args.n_hidden,
-                    n_classes,
-                    args.n_layers,
-                    F.relu, 
-                    args.dropout,
-                    args.dropout2,
-                    args.alpha
-                    )
-    if args.model == 'BernNet':
-        model = BernNet(
-                    edge_index,
-                    norm_A,
-                    in_feats,
-                    args.n_hidden,
-                    n_classes,
-                    args.n_layers,
-                    F.relu, 
-                    args.dropout,
-                    args.dropout2
-                    )
-    if args.model == 'ChebNetII':
-        model = ChebNetII(
-                    edge_index,
-                    norm_A,
-                    in_feats,
-                    args.n_hidden,
-                    n_classes,
-                    args.n_layers,
-                    F.relu, 
-                    args.dropout,
-                    args.dropout2
-                    )
-    if args.model == 'APPNP':
-        pass
     model.to(args.gpu)
     return model
 
@@ -225,7 +173,7 @@ def main(args):
     reset_random_seeds(args.seed)
     data  = build_dataset(args)
     # Set random split seeds for args.n_cv run
-    data.seeds = [random.randint(0,10000) for i in range(args.n_cv)]
+    data.seeds = [random.randint(0,10000) for _ in range(args.n_cv)]
     # Set random model seeds for args.n_cv runs 
     model_seeds = [random.randint(0,10000) for _ in range(args.n_cv)]
     logger.info('Split_seeds:{:s}'.format(str(data.seeds)))
@@ -255,7 +203,7 @@ def set_args():
     parser = argparse.ArgumentParser(description='GCN')
     parser.add_argument('--seed', type=int, default=42, help='Random seed.')
     parser.add_argument("--model", type=str, default='NormalNN',help='(NormalNN, ARMA, BernNet)')
-    parser.add_argument("--gpu", type=int, default=0, help="gpu")
+    parser.add_argument("--gpu", type=int, default=1, help="gpu")
     parser.add_argument("--dataset", type=str, default="cora", help="Dataset name ('cora', 'citeseer', 'pubmed').")
     parser.add_argument("--ds-split", type=str, default="standard", help="split by ('standard', 'random').")
 
