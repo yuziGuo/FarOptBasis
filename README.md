@@ -11,11 +11,29 @@ two spectral graph neural networks which adapts the polynomial bases for filteri
 <!-- Scripts for reproducing results of our models in Table 1.  -->
 
 #### Folder structure.
+```.
+├── cache
+│   └── ckpts
+├── data
+│   ├── linkx
+├── datasets
+│   ├── geom_data
+│   ├── linkx
+│   └── Planetoid
+├── layers
+├── models
+├── runs
+│   └── placeholder.txt
+└── utils
+```
 
 #### Reproducing Table 1.
+
 ```
 sh reproduce_favardgnn.sh
 sh reproduce_optbasis.sh
 ```
+
+![Image](https://pic4.zhimg.com/80/v2-0d26a237dc57435236f1ec6e7d19a9be.png)
 
 #### Reproducing Table 2.
