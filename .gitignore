@@ -4,6 +4,9 @@
 ./*.log 
 
 #
+*cachedMatrices.zip
+
+#
 run.sh
 
 # checkpoints
