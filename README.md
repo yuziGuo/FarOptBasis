@@ -6,6 +6,15 @@
 This repository includes the implementation for **FavardGNN** and **OptBasisGNN**, 
 two spectral graph neural networks which adapts the polynomial bases for filtering. 
 
+## Table of contents
+1. [Reproducing Classification results](#reproducing-classification-results)
+    1. [On Geom-GCN datasets and Citation datasets](#reproducing-results-on-geom-gcn-datasets-tbl1)
+    2. [On LINKX datasets](#reproducing-results-on-linkx-datasets-tbl2)
+2. [Reproducing Regression results](#reproducing-regression-task)
+    1. [Preparations](#preparations)
+    2. [Run experiments](#run-experiments)
+
+
 ## Reproducing Classification Results.
 <!-- Scripts for reproducing results of our models in Table 1.  -->
 
@@ -51,6 +60,7 @@ Shift working path to `Regression/`.
 sh> cd Regression
 ```
 
+### Preparations.
 **Step 1: Prepare images**
 ```bash
 sh> unzip -d BernNetImages  BernNet-LearningFilters-image.zip
@@ -96,8 +106,7 @@ sh> python make_dataset.py
 ```
 The result of this step is a pickle file `MultiChannelFilterDataset.pkl`.
 
-
-**Step 4: Run experiments!**
+### Run experiments.
 Now we run the regression task!
 At this moment, the folder structure (ignoring python files) is:
 ```
@@ -110,7 +119,6 @@ At this moment, the folder structure (ignoring python files) is:
     ├── highpass_Np=100.pkl
     └── lowpass_Np=100.pkl
 ```
-
 
 To reproduce *Table 5*, 
 you can use the bash script below to run over all the samples.
