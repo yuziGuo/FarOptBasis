@@ -75,6 +75,8 @@ you can also
 **download** our pre-computed matrices from 
 this [google drive url](https://drive.google.com/file/d/1UwNyjfTykPLhhYtW52XVJ_wexJ_LmONV/view?usp=sharing), and unzip them directly.
 ```bash
+sh > mkdir save
+sh > # Download cachedMatrices.zip and put it under ./Regresion/save/
 sh> unzip save/cachedMatrices.zip -d ./save/
 sh> rm ./save/cachedMatrices.zip
 ```
