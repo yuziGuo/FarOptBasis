@@ -16,7 +16,7 @@ two spectral graph neural networks which adapts the polynomial bases for filteri
     2. [Run experiments](#run-experiments)
 
 ## Requirements
-[TODO]
+[Under Construction]
 
 ## Reproducing Classification Results.
 <!-- Scripts for reproducing results of our models in Table 1.  -->
@@ -27,16 +27,16 @@ the folder structure is as below:
 ```bash
 .
 ├── cache
-│   └── ckpts
+│   └── ckpts 
 ├── data
-│   ├── linkx
+│   ├── linkx # Code From LINKX repo
 ├── datasets
 │   ├── geom_data
 │   ├── linkx
 │   └── Planetoid
 ├── layers
 ├── models
-├── runs
+├── runs 
 │   └── placeholder.txt
 └── utils
 ```
@@ -65,11 +65,13 @@ sh> cd Regression
 
 ### Preparations.
 **Step 1: Prepare images**
+
 ```bash
 sh> unzip -d BernNetImages  BernNet-LearningFilters-image.zip
 ```
 
 **Step 2: Pre-compute $U h(\Lambda) U^T$**
+
 Pre-compute the matrix polynomials $M = U h(\Lambda) U^T = h(L)$
 where $h$ corresponds to 
 $L$ is the Laplacian matrix for `100x100` grid graph, and 
@@ -141,3 +143,6 @@ you can use the following script to run one or several samples and record the lo
 ```bash
 sh> python main_sample.py
 ```
+
+## Related Repos
+[Under Construction]
