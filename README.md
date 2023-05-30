@@ -97,7 +97,7 @@ The result of this step is a pickle file `MultiChannelFilterDataset.pkl`.
 
 **Step 4: Run experiments!**
 Now we run the regression task!
-At this moment, the folder structure (ignoring python files) is
+At this moment, the folder structure (ignoring python files) is:
 ```
 ./Regression/
 ├── BernNet-LearningFilters-image.zip
