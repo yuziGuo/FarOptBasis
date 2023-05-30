@@ -56,7 +56,7 @@ sh> cd Regression
 sh> unzip -d BernNetImages  BernNet-LearningFilters-image.zip
 ```
 
-**Step 2: Pre-compute $ U h(\Lambda) U^T $**
+**Step 2: Pre-compute $U h(\Lambda) U^T$**
 Pre-compute the matrix polynomials $M = U h(\Lambda) U^T = h(L)$
 where $h$ corresponds to 
 $L$ is the Laplacian matrix for `100x100` grid graph, and 
@@ -71,9 +71,12 @@ sh> python preprocess_matrix_polynomials.py
 ```
 The result of this step is saved in the `save/` folder.
 This step would take several hours, 
-you can also unzip our pre-computed matrices directly.
+you can also 
+**download** our pre-computed matrices from 
+this [google drive url](https://drive.google.com/file/d/1UwNyjfTykPLhhYtW52XVJ_wexJ_LmONV/view?usp=sharing), and unzip them directly.
 ```bash
-sh> unzip ./save/cachedMatrices.zip
+sh> unzip save/cachedMatrices.zip -d ./save/
+sh> rm ./save/cachedMatrices.zip
 ```
 
 The resulted files are:
@@ -89,10 +92,24 @@ The resulted files are:
 ```bash
 sh> python make_dataset.py
 ```
-The result of this step is `MultiChannelFilterDataset.pkl`.
+The result of this step is a pickle file `MultiChannelFilterDataset.pkl`.
 
 
 **Step 4: Run experiments!**
+Now we run the regression task!
+At this moment, the folder structure (ignoring python files) is
+```
+./Regression/
+├── BernNet-LearningFilters-image.zip
+├── MultiChannelFilterDataset.pkl
+└── save
+    ├── bandpass_Np=100.pkl
+    ├── bandreject_Np=100.pkl
+    ├── highpass_Np=100.pkl
+    └── lowpass_Np=100.pkl
+```
+
+
 To reproduce *Table 5*, 
 you can use the bash script below to run over all the samples.
 ```bash
