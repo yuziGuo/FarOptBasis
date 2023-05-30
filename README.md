@@ -73,8 +73,7 @@ sh> unzip -d BernNetImages  BernNet-LearningFilters-image.zip
 **Step 2: Pre-compute $U h(\Lambda) U^T$**
 
 Pre-compute the matrix polynomials $M = U h(\Lambda) U^T = h(L)$
-where $h$ corresponds to 
-$L$ is the Laplacian matrix for `100x100` grid graph, and 
+where $L$ is the Laplacian matrix for `100x100` grid graph, 
 and $h$ corresponds to
 - `High-pass` filter;
 - `Low-pass` filter;
