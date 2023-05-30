@@ -98,12 +98,14 @@ you can use the bash script below to run over all the samples.
 ```bash
 sh> python main_all.py
 ```
-![Table 5](./scripts/reported/tbl5.png)
+<!-- ![Table 5](./scripts/reported/tbl5.png) -->
+<img src="./scripts/reported/tbl5.png" alt="Table 5" width="300" height="90">
 
 To reproduce converging curves as in *Figure 2*, 
 
 <!-- ![sample](./scripts/reported/icml-6.pdf) -->
-![Figure 2](./scripts/reported/fig2.png)
+<!-- ![Figure 2](./scripts/reported/fig2.png) -->
+<img src="./scripts/reported/fig2.png" alt="Figure 2" width="300" height="180">
 
 you can use the following script to run one or several samples and record the losses.
 ```bash
