@@ -8,10 +8,10 @@ two spectral graph neural networks which adapts the polynomial bases for filteri
 
 ## Table of contents
 1. [Requirements](#requirements)
-2. [Reproducing Classification results](#reproducing-classification-results)
+2. [Reproducing Classification Results](#reproducing-classification-results)
     1. [On Geom-GCN datasets and Citation datasets](#reproducing-results-on-geom-gcn-datasets-tbl1)
     2. [On LINKX datasets](#reproducing-results-on-linkx-datasets-tbl2)
-3. [Reproducing Regression results](#reproducing-regression-task)
+3. [Reproducing Regression Results](#reproducing-regression-task)
     1. [Preparations](#preparations)
     2. [Run experiments](#run-experiments)
 
@@ -144,4 +144,8 @@ sh> python main_sample.py
 ```
 
 ## Related Repos
+[Under Construction]
+
+
+## Cite our work
 [Under Construction]
