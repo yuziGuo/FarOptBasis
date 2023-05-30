@@ -32,8 +32,8 @@ the folder structure is as below:
 ### Reproducing Results on Geom-GCN Datasets (Tbl.1).
 Run scripts in the following files under `./` path.
 ```bash
-sh scripts/reproduce_favardgnn.sh
-sh scripts/reproduce_optbasis.sh
+sh> sh scripts/reproduce_favardgnn.sh
+sh> sh scripts/reproduce_optbasis.sh
 ```
 
 ![Table 1](./scripts/reported/tbl1.png)
@@ -41,7 +41,7 @@ sh scripts/reproduce_optbasis.sh
 ### Reproducing Results on LINKX Datasets (Tbl.2).
 Run scripts in the following files under `./` path.
 ```bash
-sh scripts/reproduce_linkx.sh
+sh> sh scripts/reproduce_linkx.sh
 ```
 ![Table 2](./scripts/reported/tbl2.png)
 
