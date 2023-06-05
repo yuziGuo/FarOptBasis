@@ -150,8 +150,9 @@ sh> python main_sample.py
 ```
 
 ## Hyperparams-tuning scripts using Optuna
-[Under Construction]
-If you want to run FavardGNN or OptBasisGNN on other datasets, 
+**[Under Construction]**
+
+If you want to test FavardGNN or OptBasisGNN on *other datasets*, 
 you might need the Optuna script for hyperparameter tuning. 
 Contact me at guoyuhe[at]ruc[dot]edu[dot]cn. 
 
