@@ -1,10 +1,15 @@
 # Graph Neural Networks with Learnable and Optimal Polynomial Bases
 [**Under construction**].
 
-[Paper](https://arxiv.org/abs/2302.12432). 
+[\[Paper(Old Version)\]](https://arxiv.org/abs/2302.12432). 
+A new version (much better written) is coming soon. Wait for ICML'23 announcement!
 
 This repository includes the implementation for **FavardGNN** and **OptBasisGNN**, 
 two spectral graph neural networks which adapts the polynomial bases for filtering. 
+
+If you have any question about our methodology or this repository, 
+please contact me or raise an issue. 
+
 
 ## Table of contents
 1. [Requirements](#requirements)
@@ -14,6 +19,7 @@ two spectral graph neural networks which adapts the polynomial bases for filteri
 3. [Reproducing Regression Results](#reproducing-regression-task)
     1. [Preparations](#preparations)
     2. [Run experiments](#run-experiments)
+4. [Hyperparams Tuning Scripts](#hyperparams-tuning-scripts-using-optuna)
 
 ## Requirements
 [Under Construction]
@@ -142,6 +148,12 @@ you can use the following script to run one or several samples and record the lo
 ```bash
 sh> python main_sample.py
 ```
+
+## Hyperparams-tuning scripts using Optuna
+[Under Construction]
+If you want to run FavardGNN or OptBasisGNN on other datasets, 
+you might need the Optuna script for hyperparameter tuning. 
+Contact me at guoyuhe[at]ruc[dot]edu[dot]cn. 
 
 ## Related Repos
 [Under Construction]
