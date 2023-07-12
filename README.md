@@ -1,8 +1,8 @@
 # Graph Neural Networks with Learnable and Optimal Polynomial Bases
 [**Under construction**].
 
-[\[Paper(Old Version)\]](https://arxiv.org/abs/2302.12432). 
-A new version (much better written) is coming soon. Wait for ICML'23 announcement!
+[\[Paper\]](https://arxiv.org/abs/2302.12432). 
+This work is accepted to ICML'23!
 
 This repository includes the implementation for **FavardGNN** and **OptBasisGNN**, 
 two spectral graph neural networks which adapts the polynomial bases for filtering. 
@@ -141,6 +141,7 @@ sh> python main_all.py
 To reproduce converging curves as in *Figure 2*, 
 
 <!-- ![sample](./scripts/reported/icml-6.pdf) -->
+
 <!-- ![Figure 2](./scripts/reported/fig2.png) -->
 <img src="./scripts/reported/fig2.png" alt="Figure 2" width="500" height="300">
 
