@@ -162,4 +162,30 @@ Contact me at guoyuhe[at]ruc[dot]edu[dot]cn.
 
 
 ## Cite our work
-[Under Construction]
+
+Please cite us if our work or repo inspire you.
+
+```
+@inproceedings{DBLP:conf/icml/GuoW23,
+  author       = {Yuhe Guo and
+                  Zhewei Wei},
+  editor       = {Andreas Krause and
+                  Emma Brunskill and
+                  Kyunghyun Cho and
+                  Barbara Engelhardt and
+                  Sivan Sabato and
+                  Jonathan Scarlett},
+  title        = {Graph Neural Networks with Learnable and Optimal Polynomial Bases},
+  booktitle    = {International Conference on Machine Learning, {ICML} 2023, 23-29 July
+                  2023, Honolulu, Hawaii, {USA}},
+  series       = {Proceedings of Machine Learning Research},
+  volume       = {202},
+  pages        = {12077--12097},
+  publisher    = {{PMLR}},
+  year         = {2023},
+  url          = {https://proceedings.mlr.press/v202/guo23i.html},
+  timestamp    = {Wed, 16 Aug 2023 17:14:15 +0200},
+  biburl       = {https://dblp.org/rec/conf/icml/GuoW23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+```
